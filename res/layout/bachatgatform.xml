@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                  android:layout_centerHorizontal="true"
+                  android:text="Registration Form"
+                  android:textColor="#e62d00"
+                  android:id="@+id/registrationFormTextView"
+        />
+        <!--<android.support.design.widget.TabLayout.TabView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputNameOfBachatGat"
+                android:layout_below="@+id/registrationFormTextView">-->
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Username"
+                android:singleLine="true"
+                android:id="@+id/txtusername"
+                android:textSize="16sp"
+                android:layout_marginTop="100px"
+                android:layout_below="@+id/registrationFormTextView"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="First Name"
+                android:singleLine="true"
+                android:id="@+id/txtfirstname"
+                android:textSize="16sp"
+                android:layout_below="@+id/txtusername"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Last Name"
+                android:singleLine="true"
+                android:id="@+id/txtlastname"
+                android:textSize="16sp"
+                android:layout_below="@id/txtfirstname"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:hint="Email"
+                android:singleLine="true"
+                android:id="@+id/txtemail"
+                android:textSize="16sp"
+                android:layout_below="@id/txtlastname"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Pan Card No"
+                android:id="@+id/txtpanCardNo"
+                android:textSize="16sp"
+                android:layout_below="@id/txtemail"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="VAT/TIN/Service Tax No"
+                android:id="@+id/txtvat_tin_servicetax_no"
+                android:textSize="16sp"
+                android:layout_below="@id/txtpanCardNo"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="CST"
+                android:id="@+id/txtcst"
+                android:textSize="16sp"
+                android:layout_below="@id/txtvat_tin_servicetax_no"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:hint="Mobile No"
+                android:id="@+id/txtmobile"
+                android:textSize="16sp"
+                android:layout_below="@id/txtcst"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:hint="Telephone"
+                android:id="@+id/txttelephone"
+                android:textSize="16sp"
+                android:layout_below="@id/txtmobile"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Bank IFSC Code/SWIFT"
+                android:id="@+id/txtbankifscCode"
+                android:textSize="16sp"
+                android:layout_below="@id/txttelephone"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Bank Name"
+                android:id="@+id/txtbankName"
+                android:textSize="16sp"
+                android:layout_below="@id/txtbankifscCode"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Bank Address"
+                android:id="@+id/txtbankAddress"
+                android:textSize="16sp"
+                android:layout_below="@id/txtbankName"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Benefiaciary Name"
+                android:id="@+id/txtbenifiaciaryName"
+                android:textSize="16sp"
+                android:layout_below="@id/txtbankAddress"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Account Number"
+                android:textColor="#000000"
+                android:id="@+id/txtacountNo"
+                android:textSize="16sp"
+                android:layout_below="@id/txtbenifiaciaryName"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Type Of Account"
+                android:id="@+id/txttypeOfAccount"
+                android:textSize="16sp"
+                android:layout_below="@id/txtacountNo"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:hint="Pay al Email"
+                android:id="@+id/txtpayEmail"
+                android:textSize="16sp"
+                android:layout_below="@id/txttypeOfAccount"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:hint="WhatsApp Number"
+                android:id="@+id/txtwhatsappNo"
+                android:textSize="16sp"
+                android:layout_below="@id/txtpayEmail"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Company Name"
+                android:id="@+id/txtcompanyName"
+                android:textSize="16sp"
+                android:layout_below="@id/txtwhatsappNo"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Company ID"
+                android:id="@+id/txtcompanyId"
+                android:textSize="16sp"
+                android:layout_below="@id/txtcompanyName"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Address 1"
+                android:id="@+id/txtcompanyAddress1"
+                android:textSize="16sp"
+                android:layout_below="@id/txtcompanyId"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Address 2"
+                android:id="@+id/txtcompanyAddress2"
+                android:textSize="16sp"
+                android:layout_below="@id/txtcompanyAddress1"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint=" City"
+                android:id="@+id/txtcompanyCity"
+                android:textSize="16sp"
+                android:layout_below="@id/txtcompanyAddress2"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Post Code"
+                android:id="@+id/txtcompanyPostCode"
+                android:textSize="16sp"
+                android:layout_below="@id/txtcompanyCity"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Country"
+                android:id="@+id/ddlcompanyCountry"
+                android:textSize="16sp"
+                android:layout_below="@id/txtcompanyPostCode"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Region /State"
+                android:id="@+id/txtcompanyState"
+                android:textSize="16sp"
+                android:layout_below="@id/ddlcompanyCountry"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Website URL"
+                android:id="@+id/txtwebsiteURL"
+                android:textSize="16sp"
+                android:layout_below="@id/txtcompanyState"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Tell Us More About Company"
+                android:id="@+id/txtcompanyDescription"
+                android:textSize="16sp"
+                android:layout_below="@id/txtwebsiteURL"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Your Primary Category"
+                android:id="@+id/ddlprimaryCategory"
+                android:textSize="16sp"
+                android:layout_below="@id/txtcompanyDescription"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Sub-Category"
+                android:id="@+id/ddlsubCategory"
+                android:textSize="16sp"
+                android:layout_below="@id/ddlprimaryCategory"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Your Products"
+                android:id="@+id/txtproduct"
+                android:textSize="16sp"
+                android:layout_below="@id/ddlsubCategory"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="I have Read And Agree the T and C and Privacy Policy"
+                android:id="@+id/txttnc"
+                android:textSize="16sp"
+                android:layout_below="@id/txtproduct"/>
+
+
+
+
+        <!-- </android.support.design.widget.TabLayout.TabView>-->
+        <Button android:layout_width="230px"
+                android:layout_height="90px"
+                android:text="Add Member"
+                android:layout_marginRight="24px"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:id="@+id/btnAddMember"
+                android:layout_alignTop="@+id/btnSubmit"
+                android:layout_toStartOf="@+id/btnSubmit"/>
+        <Button
+                android:layout_width="230px"
+                android:layout_height="90px"
+                android:text="Submit"
+                android:id="@+id/btnSubmit"
+                android:layout_below="@id/txttnc"
+                android:layout_marginTop="24px"
+                android:layout_marginBottom="24px"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"/>
+        <Button
+                android:layout_width="230px"
+                android:layout_height="90px"
+                android:text="Cancel"
+                android:id="@+id/btnCancel"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:layout_alignTop="@+id/btnAddMember"
+                android:layout_alignParentStart="true"/>
+
+
+    </RelativeLayout>
+</ScrollView>

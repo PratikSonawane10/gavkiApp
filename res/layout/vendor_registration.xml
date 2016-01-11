@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                  android:layout_centerHorizontal="true"
+                  android:text="Vendor Registration Form"
+                  android:textColor="#e62d00"
+                  android:id="@+id/registrationFormTextView"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo"
+                android:layout_marginTop="30px"
+                android:src="@drawable/gavki"
+                android:layout_below="@+id/registrationFormTextView"
+                android:layout_centerHorizontal="true"/>
+
+        <!--<android.support.design.widget.TabLayout.TabView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputNameOfBachatGat"
+                android:layout_below="@+id/registrationFormTextView">-->
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="First Name"
+                android:singleLine="true"
+                android:id="@+id/txtfirstname"
+                android:textSize="20sp"
+                android:layout_below="@+id/logo"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Last Name"
+                android:singleLine="true"
+                android:id="@+id/txtlastname"
+                android:textSize="20sp"
+                android:layout_below="@id/txtfirstname"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:hint="Email"
+                android:singleLine="true"
+                android:id="@+id/txtemail"
+                android:textSize="20sp"
+                android:layout_below="@id/txtlastname"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:hint="Mobile No"
+                android:id="@+id/txtmobile"
+                android:textSize="20sp"
+                android:layout_below="@id/txtemail"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:hint="WhatsApp Number"
+                android:id="@+id/txtwhatsappNo"
+                android:textSize="20sp"
+                android:layout_below="@id/txtmobile"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Pan Card No"
+                android:id="@+id/txtpanCardNo"
+                android:textSize="20sp"
+                android:layout_below="@id/txtwhatsappNo"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="VAT/TIN/Service Tax No"
+                android:id="@+id/txtvat_tin_servicetax_no"
+                android:textSize="20sp"
+                android:layout_below="@id/txtpanCardNo"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Address"
+                android:id="@+id/txtbankAddress"
+                android:textSize="20sp"
+                android:layout_below="@id/txtvat_tin_servicetax_no"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Post Code"
+                android:id="@+id/txtcompanyPostCode"
+                android:textSize="20sp"
+                android:layout_below="@id/txtbankAddress"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:hint="Your Products"
+                android:id="@+id/txtproduct"
+                android:textSize="20sp"
+                android:layout_below="@id/txtcompanyPostCode"/>
+
+
+        <!-- </android.support.design.widget.TabLayout.TabView>-->
+
+        <Button
+                android:layout_width="230px"
+                android:layout_height="90px"
+                android:text="Submit"
+                android:id="@+id/btnSubmit"
+                android:layout_below="@id/txtproduct"
+                android:layout_marginTop="24px"
+                android:layout_marginBottom="24px"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"/>
+        <Button
+                android:layout_width="230px"
+                android:layout_height="90px"
+                android:text="Cancel"
+                android:id="@+id/btnCancel"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:layout_alignTop="@+id/btnSubmit"
+                android:layout_alignParentStart="true"/>
+
+
+
+    </RelativeLayout>
+</ScrollView>

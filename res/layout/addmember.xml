@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20dp"
+              android:layout_centerHorizontal="true"
+              android:text="Add Member Form"
+              android:textColor="#e62d00"
+              android:id="@+id/addMemberFormTextView"
+    />
+    <!--<android.support.design.widget.TabLayout.TabView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputNameOfBachatGat"
+            android:layout_below="@+id/registrationFormTextView">-->
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Member Name "
+            android:singleLine="true"
+            android:id="@+id/txtMemberName"
+            android:textSize="16sp"
+            android:layout_marginTop="100px"
+            android:layout_below="@+id/addMemberFormTextView"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Contact No"
+            android:singleLine="true"
+            android:id="@+id/txtMemberContactNo"
+            android:textSize="16sp"
+            android:layout_below="@+id/txtMemberName"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Email"
+            android:singleLine="true"
+            android:id="@+id/txtMemberEmail"
+            android:textSize="16sp"
+            android:layout_below="@id/txtMemberContactNo"/>
+
+    <!-- </android.support.design.widget.TabLayout.TabView>-->
+    <Button android:layout_width="230px"
+            android:layout_height="90px"
+            android:text="Cancel"
+            android:layout_marginRight="24px"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:id="@+id/btnCancel"
+            android:layout_alignTop="@+id/btnAddMember"
+            android:layout_toStartOf="@+id/btnAddMember"
+            android:layout_below="@+id/txtMemberEmail"/>
+    <Button
+            android:layout_width="230px"
+            android:layout_height="90px"
+            android:text="Add Member"
+            android:id="@+id/btnAddMember"
+            android:layout_below="@id/txtMemberEmail"
+            android:layout_marginTop="24px"
+            android:layout_marginBottom="24px"
+            android:layout_alignParentRight="true"
+            android:textColor="#000000"
+            android:background="@android:color/transparent"/>
+
+
+
+</RelativeLayout>

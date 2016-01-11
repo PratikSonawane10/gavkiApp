@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20dp"
+              android:layout_centerHorizontal="true"
+              android:text="Add New Customer "
+              android:textColor="#e62d00"
+              android:id="@+id/addMemberFormTextView"
+    />
+    <!--<android.support.design.widget.TabLayout.TabView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputNameOfBachatGat"
+            android:layout_below="@+id/registrationFormTextView">-->
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Customer Name "
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:id="@+id/txtCustomerName"
+            android:textSize="20sp"
+            android:layout_marginTop="100px"
+            android:layout_below="@+id/addMemberFormTextView"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Contact No"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:id="@+id/txtCustomerContactNo"
+            android:textSize="20sp"
+            android:layout_below="@+id/txtCustomerName"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Email"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:id="@+id/txtCustomerEmail"
+            android:textSize="20sp"
+            android:layout_below="@id/txtCustomerContactNo"/>
+
+    <!-- </android.support.design.widget.TabLayout.TabView>-->
+    <Button android:layout_width="230px"
+            android:layout_height="120px"
+            android:text="Cancel"
+            android:layout_marginRight="24px"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:id="@+id/btnCancel"
+            android:layout_alignTop="@+id/btnAddCustomer"
+            android:layout_toStartOf="@+id/btnAddCustomer"
+            android:layout_below="@+id/txtCustomerEmail"/>
+    <Button
+            android:layout_width="230px"
+            android:layout_height="120px"
+            android:text="Add Customer"
+            android:id="@+id/btnAddCustomer"
+            android:layout_below="@+id/txtCustomerEmail"
+            android:layout_marginTop="24px"
+            android:layout_marginBottom="24px"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"/>
+
+
+
+</RelativeLayout>
